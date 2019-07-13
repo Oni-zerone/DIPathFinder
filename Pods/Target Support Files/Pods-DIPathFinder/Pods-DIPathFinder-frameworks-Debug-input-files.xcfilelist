@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-DIPathFinder/Pods-DIPathFinder-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Dip/Dip.framework
+${BUILT_PRODUCTS_DIR}/PowerTools/PowerTools.framework
+${BUILT_PRODUCTS_DIR}/Files/Files.framework

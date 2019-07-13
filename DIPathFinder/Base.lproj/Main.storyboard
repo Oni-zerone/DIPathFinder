@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Folder View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FolderViewController" id="BYZ-38-t0r" customClass="FolderViewController" customModule="DIPathFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Folder Creator View Controller-->
+        <scene sceneID="oq3-9n-IHv">
+            <objects>
+                <viewController storyboardIdentifier="FolderCreatorViewController" id="vuu-br-Bb3" customClass="FolderCreatorViewController" customModule="DIPathFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="asi-hA-djL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="swy-0B-e1z">
+                                <rect key="frame" x="80" y="118" width="254" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QY9-ql-GLj">
+                                <rect key="frame" x="80" y="752" width="254" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="createFolder:" destination="vuu-br-Bb3" eventType="touchUpInside" id="YLA-Dy-3jL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QY9-ql-GLj" firstAttribute="leading" secondItem="Yyw-5g-lj0" secondAttribute="leading" constant="80" id="2bZ-pK-fYE"/>
+                            <constraint firstItem="swy-0B-e1z" firstAttribute="top" secondItem="Yyw-5g-lj0" secondAttribute="top" constant="74" id="Cin-Jp-U3I"/>
+                            <constraint firstItem="Yyw-5g-lj0" firstAttribute="bottom" secondItem="QY9-ql-GLj" secondAttribute="bottom" constant="80" id="KGe-Gn-XEQ"/>
+                            <constraint firstItem="Yyw-5g-lj0" firstAttribute="trailing" secondItem="QY9-ql-GLj" secondAttribute="trailing" constant="80" id="PeW-0H-QEW"/>
+                            <constraint firstItem="Yyw-5g-lj0" firstAttribute="trailing" secondItem="swy-0B-e1z" secondAttribute="trailing" constant="80" id="UJ9-8Y-N4b"/>
+                            <constraint firstItem="swy-0B-e1z" firstAttribute="leading" secondItem="Yyw-5g-lj0" secondAttribute="leading" constant="80" id="UZe-Le-gWN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yyw-5g-lj0"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="QY9-ql-GLj" id="7sU-Gc-PZw"/>
+                        <outlet property="textFiled" destination="swy-0B-e1z" id="FuD-qd-q08"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gpb-a7-1ty" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="21"/>
+        </scene>
+    </scenes>
+</document>

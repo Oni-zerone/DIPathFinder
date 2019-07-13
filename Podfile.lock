@@ -1,0 +1,26 @@
+PODS:
+  - Dip (7.0.1)
+  - Files (2.2.1)
+  - PowerTools/CollectionVM (0.4.1):
+    - PowerTools/Core
+  - PowerTools/Core (0.4.1)
+
+DEPENDENCIES:
+  - Dip
+  - Files
+  - PowerTools/CollectionVM
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Dip
+    - Files
+    - PowerTools
+
+SPEC CHECKSUMS:
+  Dip: 79509d5dc4f648e10e922ed79c608a7761c52b13
+  Files: 18a88ede4f1e339a73adaca7272af15fa32ba69f
+  PowerTools: d0fba4a2460ebf7cbb375096811969225ad4c385
+
+PODFILE CHECKSUM: 0b289ba201b2cb473cdf7e9efcf061949f7c2b01
+
+COCOAPODS: 1.7.2
