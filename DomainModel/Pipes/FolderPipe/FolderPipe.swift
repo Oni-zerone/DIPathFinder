@@ -38,6 +38,7 @@ public class FolderPipe: PowerTools.Pipe<[SectionViewModel]> {
     }
     
     public override func success(_ content: [SectionViewModel]) {
+        
         let folders = folderRepository.getFolders(in: referenceFolder)
         let viewModels = folders.map { folderVMFactory.build($0) }
         let section = sectionVMFactory.buildSection(header: nil, items: viewModels, footer: nil)
